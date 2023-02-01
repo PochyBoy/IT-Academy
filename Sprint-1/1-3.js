@@ -95,7 +95,7 @@ getSalary(employees[1]).then(res => {
 
 /*Ejercicio 3 */
 
- const getEmployee2 = id => {
+ export const getEmployee2 = id => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             let employee = employees.find(employee => employee.id === id);
@@ -108,7 +108,7 @@ getSalary(employees[1]).then(res => {
     });
 };
  
- const getSalary2 = employee => {
+ export const getSalary2 = employee => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             let salary = salaries.find(salary => salary.id === employee.id);
@@ -136,4 +136,3 @@ getEmployee2(5)
 
 
 
-    exports.module = {getSalary2, getEmployee2}

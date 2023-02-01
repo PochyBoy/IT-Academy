@@ -2,9 +2,8 @@
 //NIVEL 1
 /* Ejercicio 1 */
 
-const getEmployee2 = require('./1-3')
-const getSalary2 = require('./1-3')
 
+import {getSalary2, getEmployee2} from './1-3'
 async function pintadoEmployeeData(id) {
     try {
         let employee = await getEmployee2(id);
