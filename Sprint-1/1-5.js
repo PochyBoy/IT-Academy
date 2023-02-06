@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 
-let creacion= async() => {
+let creacion= (async() => {
     try {
      fs.writeFile (`${__dirname}/texto.txt`,"Texto de Paul VP", (error)=>{
         
@@ -10,11 +10,11 @@ let creacion= async() => {
     } catch (error) {
         console.log(error)
     }
-}
+})()
 
-creacion()
 
-let escritura = async ( )=>{
+
+let escritura = (async ( )=>{
     try {
         fs.appendFile(`${__dirname}/texto.txt`,"\n Agregando linea al texto", (error)=>{
 
@@ -22,9 +22,9 @@ let escritura = async ( )=>{
     } catch (error) {
         console.error(error);
     }
-}
+})()
 
-escritura()
+
 
 let lectura = async () => {
     try {

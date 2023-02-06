@@ -1,5 +1,7 @@
 //NIVEL 1
-/* Ejercicio 1*/
+/* Ejercicio 1
+
+*/
 
 let Alumno = false;
 

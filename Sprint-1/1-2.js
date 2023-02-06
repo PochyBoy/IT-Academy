@@ -4,23 +4,21 @@
 
 /** Ejercicio 1 **/
 
-let suma = (numero1,numero2) => {
+let suma = ((numero1,numero2) => {
     console.log(numero1 + numero2)
-}
+})(5,20)
 
-suma (5, 20)
+//suma (5, 20)
 
 
 //Nivel 2
 /** Ejercicio 1 **/
 
-let nombre = (nombre) => {
-    let objeto = {nombre: nombre}
+let nombre = ((nombre) => {
+    let objeto = {nombre}
 
     console.log(objeto)
-}
-
-nombre('Paul Vargas Portugal')
+})('Paul Vargas Portugal')
 
 /** Ejercicio 2 **/
 
