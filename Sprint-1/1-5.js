@@ -1,3 +1,44 @@
 const fs = require('fs')
 
-fs.writeFile('textodeprueba.txt')
+
+let creacion= async() => {
+    try {
+     fs.writeFile (`${__dirname}/texto.txt`,"Texto de Paul VP", (error)=>{
+        
+     })
+        
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+creacion()
+
+let escritura = async ( )=>{
+    try {
+        fs.appendFile(`${__dirname}/texto.txt`,"\n Agregando linea al texto", (error)=>{
+
+        })
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+escritura()
+
+let lectura = async () => {
+    try {
+         fs.readFile(`${__dirname}/texto.txt`, 'utf-8', (error, data)=>{
+            if(!error){
+        console.log(data)
+
+            }
+        })
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+lectura()
+
+
