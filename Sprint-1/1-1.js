@@ -58,4 +58,8 @@ let funcionAnonima = function(nombre){
     console.log(nombre)
 }
 
-funcionAnonima('Paul Vargas Portugal uwu')
+const templade = `Hola, mi nombre es ${funcionAnonima('Paul Vargas Portugal uwu')}`
+
+console.log(templade)
+
+

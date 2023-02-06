@@ -1,5 +1,8 @@
 //NIVEL 1
-/* Ejercicio 1 */
+/* Ejercicio 1
+Crea una funció asíncrona que rebi un id d'empleat/da i imprimeixi per pantalla el nom de l'empleat/da i el seu salari,
+ usant les funcions getEmployee() i getSalary() que has definit a la tasca anterior.
+*/
 
 const _Persona = require("./1-3");
 
@@ -16,7 +19,9 @@ async function pintadoEmployeeData(id) {
 }
 pintadoEmployeeData(2);
 
-/* Ejercicio 2 */
+/* Ejercicio 2 
+
+Crea una nova funció asíncrona que cridi a una altra que retorni una Promise que efectuï la seva funció resolve() després de 2 segons de la seva invocació.*/
 
 async function promesaTime() {
   let result = await new Promise((resolve) => {
@@ -33,7 +38,10 @@ promesaTime().then((result) => {
 
 //NIVEL 2
 
-/*Ejercicio 1 */
+/*Ejercicio 1
+Crea una funció que retorni el doble del número que li passa com a paràmetre després de 2 segons.
+Crea una altra funció que rebi tres números i calculi la suma dels seus dobles fent servir la funció anterior.
+*/
 
 function dobleRetraso(num) {
   return new Promise((resolve) => {
@@ -53,7 +61,7 @@ async function sumadenumerosDoble(a, b, c) {
 dobleRetraso(10).then((result) => console.log(result));
 sumadenumerosDoble(5, 5, 5)
 
-//NIVEL 3
+//NIVEL 3 Força i captura tants errors com puguis dels nivells 1 i 2.
 
 function dobleRetraso2(num) {
   return new Promise((resolve, reject) => {
